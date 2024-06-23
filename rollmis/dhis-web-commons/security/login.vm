@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html class="loginPage" dir="ltr">
+<head>
+    <title>$!encoder.htmlEncode( ${applicationTitle} )</title>
+    <meta name="description" content="ROLL MONITORING AND EVALUATION MIS">
+    <meta name="keywords" content="ROLL MONITORING AND EVALUATION MIS">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="../../favicon.ico"/>
+    <script type="text/javascript" src="../javascripts/jQuery/jquery.min.js"></script>
+    <script>
+        $.ajaxSetup( {
+          beforeSend: function(xhr) {
+            xhr.setRequestHeader(
+                'X-Requested-With',
+                {
+                  toString: function() {
+                    return '';
+                  }
+                }
+            );
+          }
+        } );
+    </script>
+    <script type="text/javascript" src="../javascripts/login.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/widgets.css">
+    <link type="text/css" rel="stylesheet" href="../css/login.css">
+    <link type="text/css" rel="stylesheet" href="../../api/files/style/external"/>
+</head>
+
+<body  style="background:#739b4c ;">
+<h1 style="display:none">$!encoder.htmlEncode( ${applicationTitle} )</h1>
+<div style="display:none">ROLL MONITORING AND EVALUATION MIS</div>
+<div>
+	<div style="display:flex;flex-direction:row;">
+        <img id="flagArea"  src="../flags/coat2.png"i>
+	<h2 id="titleArea">ROLL MIS<h2>
+	<h4 id="introArea">Monitoring and Evalution</h4>
+	<!--  <div id="leftFooterArea2" class="innerFooterArea2">
+           <a style="color:#346c44" href="https://www.ifad.org/en/web/operations/w/country/lesotho"><span><img style=" filter: brightness(0) invert(1);" width="80px" height="80px" src="../flags/IFAD5.png"></span></a>&nbsp; <span
+            id="applicationFooter1"></span><a style="color:#346c44" href="https://opecfund.org/news/cracking-the-lock-of-geography#:~:text=That%20was%20the%20stark%20backdrop,secure%20funding%20to%20regenerate%20landscapes."><span><img style=" filter: brightness(0) invert(1);"  width="75px" height="75px" src="../flags/OPEC5.png"></span></a>&nbsp; <span
+            id="applicationFooter"></span><a style="color:#346c44" href="https://www.fao.org/agroecology/database/detail/en/c/1508059/"><span><img style=" filter: brightness(0) invert(1);" width="75px" height="75px" src="../flags/FAO5.png"></span></a>&nbsp; <span
+            id="applicationFooter1"></span><a style="color:#346c44" href="https://www.thegef.org/projects-operations/projects/10723"><span><img style=" filter: brightness(0) invert(1);" width="75px" height="75px" src="../flags/GEF5.png"></span></a>&nbsp;&nbsp; <span
+
+                                      id="applicationFooter1"></span>
+	</div>-->
+	</div>
+</div>
+    #if ( $keyConfig.selfRegistrationAllowed() )
+    <div id="accountArea">
+        <a id="createAccountButton" class="greenButtonLink" href="account.action">$i18n.getString(
+            'create_an_account')</a>
+    </div>
+    #end
+<div id="loginField" style="background:#ffffff;border-radius:0px;">
+
+    <div id="loginArea">
+        <div id="bannerArea">
+
+            <a href="https://www.ifad.org/en/web/operations/w/country/lesotho"><img src="../../api/staticContent/logo_front" style="border:none"></a>
+        </div>
+
+        <form id="loginForm" action="../../dhis-web-commons-security/login.action" method="post">
+            <div>
+               <center> <div id="signInLabel" style="color:#000000">Sign in</div></center>
+                <div><center><input style="text-align: center" type="text" id="j_username" name="j_username" placeholder="Username" required></div></center>
+                <div><center><input style="text-align: center"  type="password" id="j_password" name="j_password" autocomplete="off" placeholder="Password"
+                            required></center></div>
+               <center> <div>
+                    <label style="color:#000000"><input type="checkbox" name="2fa" value="2fa" id="2fa"/>$i18n.getString(
+                        'login_using_two_factor_authentication')</label>
+                    <input type="code" id="2fa_code" name="2fa_code"
+                           placeholder="$i18n.getString('two_factor_authentication_code')" hidden readonly>
+                </div></center>
+            </div>
+            <div id="submitDiv">
+	 <center><input id="submit" class="button" type="submit" value="$i18n.getString('sign_in')"></center>
+            </div>
+            #if( $keyAccountRecovery )
+                <div style="padding-bottom: 10px">
+                    <a id="forgotPasswordLink" href="recovery.action">$i18n.getString('forgot_password')</a>
+                </div>
+            #end
+            #if( $keyConfig.selfRegistrationAllowed() )
+                <div style="padding-bottom: 10px">
+                    <a id="createAccountLink" href="account.action">$i18n.getString('create_an_account')</a>
+                </div>
+            #end
+        </form>
+
+        #foreach( $provider in $oidcConfig.providers )
+            <form id="oidcProvider_$provider.id" action="../../oauth2/authorization/$provider.id" method="get">
+                <div id="submitDiv">
+                    <input style="width: 269px; height:46px; border:none; background: url($provider.icon) no-repeat scroll $provider.iconPadding, #fff;"
+                           id="submit" class="button" type="submit"
+                           value="$i18n.getString( $provider.loginText )">
+                </div>
+		
+            </form>
+
+	  
+        #end
+	<div style="padding:4px;font-size:15px;color:grey;text-align:center">
+	    <h4>Public User Credentials</h4>
+	    <p>Username  : public <br>
+	    Password  : Public@2024</p>
+           
+	</div>
+
+        #if( $failed == true )
+            <div id="loginMessage">
+                $!{request.getSession().getAttribute("LOGIN_FAILED_MESSAGE")}
+            </div>
+            <div id="lockedMessage" style="display: none">
+                $!{request.getSession().getAttribute("LOGIN_FAILED_MESSAGE")}
+            </div>
+        #end
+        #if ( $keyApplicationNotification )
+            <div id="notificationArea">
+                $!{keyApplicationNotification}
+            </div>
+        #end
+	
+        
+    </div>   
+</div>
+
+<div id="footerArea" style="background: #ffffff;color:#000000;">
+    <div id="leftFooterArea" class="innerFooterArea">
+             <span  > &nbsp; &nbsp;  </span><a style="color:#346c44" href="https://www.ifad.org/en/web/operations/w/country/lesotho"><span><img width="50px" height="50px" src="../flags/IFAD5.png"></span></a>&nbsp; <span       
+            id="applicationFooter"></span><a style="color:#346c44" href="https://opecfund.org/news/cracking-the-lock-of-geography#:~:text=That%20was%20the%20stark%20backdrop,secure%20funding%20to%20regenerate%20landscapes."><span><img  width="50px" height="50px" src="../flags/OPEC5.png"></span></a>&nbsp; <span
+            id="applicationFooter"></span><a style="color:#346c44" href="https://www.fao.org/agroecology/database/detail/en/c/1508059/"><span><img width="45px" height="45px" src="../flags/FAO5.png"></span></a>&nbsp; <span
+            id="applicationFooter"></span><a style="color:#346c44" href="https://www.thegef.org/projects-operations/projects/10723"><span><img width="48px" height="47px" src="../flags/GEF5.png"></span></a>&nbsp;&nbsp; <span
+                                                                                                                                    
+                                      id="applicationFooter"></span>
+   </div>
+    <div id="rightFooterArea" class="innerFooterArea">
+        <span id="applicationRightFooter">$!{keyApplicationRightFooter}</span>
+        <select id="localeSelect" onchange="login.localeChanged()" style="margin-left: 30px">
+            <option value="">[ $i18n.getString( "change_language" ) ]</option>
+            #foreach( $locale in $availableLocales )
+                <option value="${locale.language}">${locale.displayName}</option>
+            #end
+        </select>
+    </div>
+</div>
+</body>
+</html>

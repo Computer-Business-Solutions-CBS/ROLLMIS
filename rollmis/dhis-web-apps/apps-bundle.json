@@ -1,0 +1,245 @@
+[
+    {
+        "name": "aggregate-data-entry",
+        "webName": "dhis-web-aggregate-data-entry",
+        "version": "100.2.4",
+        "buildDate": "Thu Apr 20 13:04:08 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/aggregate-data-entry-app",
+        "sourceRef": "v100.2.4",
+        "source": "https://github.com/d2-ci/aggregate-data-entry-app#d5679a559c5ce3c622c389554a2475787d176a20"
+    },
+    {
+        "name": "approval",
+        "webName": "dhis-web-approval",
+        "version": "100.0.7",
+        "buildDate": "Tue Jun 14 13:35:45 2022 +0000",
+        "sourceRepo": "https://github.com/d2-ci/approval-app",
+        "sourceRef": "v100.0.7",
+        "source": "https://github.com/d2-ci/approval-app#cb815555765bb08971ceccd1b5bc3e163452b736"
+    },
+    {
+        "name": "app-management",
+        "webName": "dhis-web-app-management",
+        "version": "100.2.23",
+        "buildDate": "Fri Dec 23 12:43:18 2022 +0000",
+        "sourceRepo": "https://github.com/d2-ci/app-management-app",
+        "sourceRef": "v100.2.23",
+        "source": "https://github.com/d2-ci/app-management-app#0d6003416b08634a7b06d8ad24482f8d5a3e856d"
+    },
+    {
+        "name": "cache-cleaner",
+        "webName": "dhis-web-cache-cleaner",
+        "version": "100.1.9",
+        "buildDate": "Fri Jan 27 12:29:09 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/cache-cleaner-app",
+        "sourceRef": "v100.1.9",
+        "source": "https://github.com/d2-ci/cache-cleaner-app#8bb05d81058af8b987aafec7c00a0c8c7a8178ae"
+    },
+    {
+        "name": "capture",
+        "webName": "dhis-web-capture",
+        "version": "100.29.0",
+        "buildDate": "Mon Apr 17 17:13:43 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/capture-app",
+        "sourceRef": "v100.29.0",
+        "source": "https://github.com/d2-ci/capture-app#03610bad1c17351d396e09a88a04824349265c02"
+    },
+    {
+        "name": "dashboard",
+        "webName": "dhis-web-dashboard",
+        "version": "99.10.10",
+        "buildDate": "Wed May 10 07:15:47 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/dashboard-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/dashboard-app#4d794a1e6c70d37e68f0809fe104f6dc63b3d589"
+    },
+    {
+        "name": "data-administration",
+        "webName": "dhis-web-data-administration",
+        "version": "1.1.51",
+        "buildDate": "Wed May 10 07:18:25 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/data-administration-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/data-administration-app#4d8b80058d468da0e10e24942a4b2652bf5b036c"
+    },
+    {
+        "name": "data-visualizer",
+        "webName": "dhis-web-data-visualizer",
+        "version": "100.0.3",
+        "buildDate": "Wed May 3 09:39:28 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/data-visualizer-app",
+        "sourceRef": "v100.0.3",
+        "source": "https://github.com/d2-ci/data-visualizer-app#5f5cbc5b2ee6b006bebff5ab3522c787b19d7758"
+    },
+    {
+        "name": "data-quality",
+        "webName": "dhis-web-data-quality",
+        "version": "1.10.1",
+        "buildDate": "Wed May 10 07:15:40 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/data-quality-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/data-quality-app#5e5b30f3174be784ce0ab2b99db6c1475c5a6c2b"
+    },
+    {
+        "name": "datastore",
+        "webName": "dhis-web-datastore",
+        "version": "1.3.4",
+        "buildDate": "Wed May 10 07:16:59 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/datastore-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/datastore-app#3e309a182c6592e07e6586e86580b05611a72f22"
+    },
+    {
+        "name": "event-reports",
+        "webName": "dhis-web-event-reports",
+        "version": "33.2.37",
+        "buildDate": "Wed May 10 07:12:19 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/event-reports-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/event-reports-app#01746c1ec1924aeacdfa76c7bc62069aa969f616"
+    },
+    {
+        "name": "event-visualizer",
+        "webName": "dhis-web-event-visualizer",
+        "version": "33.0.34",
+        "buildDate": "Wed May 10 07:09:50 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/event-charts-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/event-charts-app#90aaf0bac4565cfc75f5a14df930448c7b12bfbc"
+    },
+    {
+        "name": "import-export",
+        "webName": "dhis-web-import-export",
+        "version": "1.5.20",
+        "buildDate": "Wed May 10 07:15:25 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/import-export-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/import-export-app#509ad66acf0671584cb39c4be8aabff32c6c4927"
+    },
+    {
+        "name": "interpretation",
+        "webName": "dhis-web-interpretation",
+        "version": "1.0.0",
+        "buildDate": "Wed May 10 07:10:58 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/interpretation-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/interpretation-app#99db02a2c683d28b5fa5e49f0f0b44443a3e4599"
+    },
+    {
+        "name": "maintenance",
+        "webName": "dhis-web-maintenance",
+        "version": "32.23.1",
+        "buildDate": "Wed May 10 07:23:49 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/maintenance-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/maintenance-app#722a5ce59f2f06cbf9ec074b1a98a06892978e65"
+    },
+    {
+        "name": "maps",
+        "webName": "dhis-web-maps",
+        "version": "1.30.16",
+        "buildDate": "Wed May 10 07:18:54 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/maps-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/maps-app#fbffb4fadc8fbc10bade65d9bd9681f641764796"
+    },
+    {
+        "name": "menu-management",
+        "webName": "dhis-web-menu-management",
+        "version": "28.2.8",
+        "buildDate": "Wed May 10 07:15:14 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/menu-management-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/menu-management-app#12f38684557e6b89c58b985c957aeefd0da97a17"
+    },
+    {
+        "name": "messaging",
+        "webName": "dhis-web-messaging",
+        "version": "100.0.18",
+        "buildDate": "Fri Nov 25 01:53:35 2022 +0000",
+        "sourceRepo": "https://github.com/d2-ci/messaging-app",
+        "sourceRef": "v100.0.19",
+        "source": "https://github.com/d2-ci/messaging-app#258d8e06a219ed3ee5445d1726fe536649af1699"
+    },
+    {
+        "name": "reports",
+        "webName": "dhis-web-reports",
+        "version": "100.0.30",
+        "buildDate": "Thu Nov 17 02:12:36 2022 +0000",
+        "sourceRepo": "https://github.com/d2-ci/reports-app",
+        "sourceRef": "v100.0.30",
+        "source": "https://github.com/d2-ci/reports-app#f8975161e0fd9c6ae4bcecb6f8eb7872808154f7"
+    },
+    {
+        "name": "scheduler",
+        "webName": "dhis-web-scheduler",
+        "version": "100.2.10",
+        "buildDate": "Wed Mar 1 15:47:16 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/scheduler-app",
+        "sourceRef": "v100.2.10",
+        "source": "https://github.com/d2-ci/scheduler-app#a5b1112ddd52a8ee67df7b329c4d49606ad888af"
+    },
+    {
+        "name": "sms-configuration",
+        "webName": "dhis-web-sms-configuration",
+        "version": "100.0.22",
+        "buildDate": "Mon Apr 24 12:12:11 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/sms-configuration-app",
+        "sourceRef": "v100.0.22",
+        "source": "https://github.com/d2-ci/sms-configuration-app#74804319ebb6578274e662a4ef273769049af548"
+    },
+    {
+        "name": "settings",
+        "webName": "dhis-web-settings",
+        "version": "29.14.20",
+        "buildDate": "Wed May 10 07:16:53 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/settings-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/settings-app#64d0f5689c45c4703be4b6496037ff805be57cd1"
+    },
+    {
+        "name": "tracker-capture",
+        "webName": "dhis-web-tracker-capture",
+        "version": "31.13.0",
+        "buildDate": "Fri Jun 30 10:58:29 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/tracker-capture-app",
+        "sourceRef": "2.40.0.1",
+        "source": "https://github.com/d2-ci/tracker-capture-app#37c4099b642adbcef08339d2488713b4ebac6f7b"
+    },
+    {
+        "name": "translations",
+        "webName": "dhis-web-translations",
+        "version": "26.2.30",
+        "buildDate": "Wed May 10 07:14:14 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/translations-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/translations-app#c1892e0da7b55e821c9a9a7ffa8e084db5be6345"
+    },
+    {
+        "name": "usage-analytics",
+        "webName": "dhis-web-usage-analytics",
+        "version": "101.0.28",
+        "buildDate": "Thu Nov 24 02:03:52 2022 +0000",
+        "sourceRepo": "https://github.com/d2-ci/usage-analytics-app",
+        "sourceRef": "v101.0.28",
+        "source": "https://github.com/d2-ci/usage-analytics-app#ccd367939c70e7281d412f8c4def0e025f39c501"
+    },
+    {
+        "name": "user",
+        "webName": "dhis-web-user",
+        "version": "1.5.2",
+        "buildDate": "Wed May 10 07:10:30 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/user-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/user-app#cb92a92f207c2ba2cf0a0d0ccecb47bae3a16402"
+    },
+    {
+        "name": "user-profile",
+        "webName": "dhis-web-user-profile",
+        "version": "30.3.30",
+        "buildDate": "Wed May 10 07:10:58 2023 +0000",
+        "sourceRepo": "https://github.com/d2-ci/user-profile-app",
+        "sourceRef": "2.40.0",
+        "source": "https://github.com/d2-ci/user-profile-app#5421017355e9481bc5377e4e2b8f7ad37af579a9"
+    }
+]

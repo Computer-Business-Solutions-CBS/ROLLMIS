@@ -1,0 +1,16 @@
+--2024-03-21 05:45:07--  https://www.dropbox.com/scl/fi/nacrbna3gx6e36ydrdmue/loginr.vm?rlkey=imkf86dosc8qqdk305kvwgc3a
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.81.18, 2620:100:6031:18::a27d:5112
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.81.18|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uccc174c56179cf680ad73521c56.dl.dropboxusercontent.com/cd/0/inline/CPe2ZYgoglrYQhG94fll5xG8gqCQSOLkp5SVcZI7t-5Dtx90PLOyDwgCWYlMwUbCIXoH7WpyLIr1tKCbauqkH-aYkp8e9rHyH1xmk03zZjLafsW6aQNwffI6LrvK-uI6U6zK6PLp29WYMlR4SzjYmPTd/file# [following]
+--2024-03-21 05:45:09--  https://uccc174c56179cf680ad73521c56.dl.dropboxusercontent.com/cd/0/inline/CPe2ZYgoglrYQhG94fll5xG8gqCQSOLkp5SVcZI7t-5Dtx90PLOyDwgCWYlMwUbCIXoH7WpyLIr1tKCbauqkH-aYkp8e9rHyH1xmk03zZjLafsW6aQNwffI6LrvK-uI6U6zK6PLp29WYMlR4SzjYmPTd/file
+Resolving uccc174c56179cf680ad73521c56.dl.dropboxusercontent.com (uccc174c56179cf680ad73521c56.dl.dropboxusercontent.com)... 162.125.81.15, 2620:100:6031:15::a27d:510f
+Connecting to uccc174c56179cf680ad73521c56.dl.dropboxusercontent.com (uccc174c56179cf680ad73521c56.dl.dropboxusercontent.com)|162.125.81.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6091 (5.9K) [text/plain]
+Saving to: ‘loginr.vm?rlkey=imkf86dosc8qqdk305kvwgc3a’
+
+          loginr.vm   0%[                    ]       0  --.-KB/s               loginr.vm?rlkey=imk 100%[===================>]   5.95K  --.-KB/s    in 0s      
+
+2024-03-21 05:45:09 (796 MB/s) - ‘loginr.vm?rlkey=imkf86dosc8qqdk305kvwgc3a’ saved [6091/6091]
+
